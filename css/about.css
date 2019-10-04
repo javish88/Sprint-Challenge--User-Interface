@@ -232,3 +232,73 @@ footer nav ul a {
     color: white;
     text-decoration: none;
 }
+
+
+@media all and (max-width:1000px) {
+
+    .flex-list ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .flex-list li {
+        margin: 2px;
+        flex: 1 1 50%;
+    }
+
+    a:hover {
+        background-color: red;
+        color: white;
+    }
+
+}
+
+@media all and (max-width:600px) {
+
+    .flex-list ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .flex-list li {
+        margin: 2px;
+        flex: 1 1 50%;
+    }
+
+    a:hover {
+        background-color: red;
+        color: white;
+    }
+
+    .middle-top {
+        display: flex;
+        flex-direction: column;
+        flex:1 1 50%;
+    }
+
+    .middle-content1 {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        flex:100%;
+        
+    }
+
+    .middle-top {
+        display: flex;
+        flex-direction: column;
+        flex:1 1 50%;
+    }
+
+    
+
+
+
+
+}
