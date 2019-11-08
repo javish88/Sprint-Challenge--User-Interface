@@ -101,92 +101,108 @@ ul a {
 
 .top-content {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: space-evenly;
     margin-bottom: 20px;
     border-bottom: 1px dashed black;
 }
 
 .top-content .text-container {
-    width: 48%;
+    width: 100%;
     padding: 0 1%;
     padding-bottom: 20px;
     padding-top: 20px;  
+    display: flex;
+    flex-wrap: wrap;
 }
+
+
+
+
 
 /* Filthy Boxes */
 
 .middle-content {
     margin-bottom: 20px;
-    border-bottom: 1px dashed black;
+    width: 100%;
+    
 }
 
 .middle-content h2 {
     padding: 0 2%;
-    margin-bottom: 0;
+    margin-top: 10px;
 }
 
-.middle-content .boxes {
+.middle-content p {
+    margin-top: 10px;
+}
+
+.middle-content button {
+	box-shadow:inset 0px 1px 0px 0px #ffffff;
+	background:white;
+	background-color:white;
+	border-radius:6px;
+	border:1px solid black;
+	display:inline-block;
+	cursor:pointer;
+	color:#777777;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+    padding:6px 24px;
+    margin-right: 20px;
+    margin-top: 20px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffffff;
+}
+.middle-content button:hover {
+	background:linear-gradient(to bottom, #dfdfdf 5%, #ededed 100%);
+	background-color:#dfdfdf;
+}
+.middle-content button:active {
+	position:relative;
+	top:1px;
+}
+
+.middle-top {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+    align-items: baseline;
+    width: 100%;
+    margin: 20px;
+    padding: 20px;
 }
 
-.boxes #box1 {
-    background-color: teal;
-}
-
-.boxes #box2 {
-    background-color: gold;
-}
-
-.boxes #box3 {
-    background-color: cadetblue;
-}
-
-.boxes #box4 {
-    background-color: coral;
-}
-
-.boxes #box5 {
-    background-color: crimson;
-}
-
-.boxes #box6 {
-    background-color: forestgreen;
-}
-
-.boxes #box7 {
-    background-color: darkorchid;
-}
-
-.boxes #box8 {
-    background-color: hotpink;
-}
-
-.boxes #box9 {
-    background-color: indigo;
-}
-
-.boxes #box10 {
-    background-color: dodgerblue;
-}
-
-.middle-content .boxes .box {
-    width: 12.5%;
-    height: 100px;
-    background: black;
-    margin: 20px 2.5%;
-    color: white;
+.bottom-middle {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: baseline;
+    width: 100%;
+    margin: 20px;
+    padding: 20px;
+}
+
+.places-line {
+    border-top: 1px dotted black;
+    margin-right: 10px;
+}
+
+.collaborative-line {
+    border-top: 1px dotted black;
+   
+}
+
+.button-line-places {
+    border-top: 1px dotted black;
+    margin-right: 10px;
+}
+
+.button-line-collaborative {
+    border-top: 1px dotted black;
 }
 
 .bottom-content {
-    display: flex;
+    padding-top: 20px;
     margin: 0 2% 20px;
-    justify-content: space-around;
+    
 }
 
 .bottom-content .text-container {
@@ -200,9 +216,10 @@ ul a {
 footer {
     width: 100%;
     background: black;
+    padding-top: 20px;
 }
 
-footer nav {
+footer nav ul {
     width: 60%;
     display: flex;
     justify-content: space-between;
@@ -211,7 +228,77 @@ footer nav {
     font-size: 14px;
 }
 
-footer nav a {
+footer nav ul a {
     color: white;
     text-decoration: none;
+}
+
+
+@media all and (max-width:1000px) {
+
+    .flex-list ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .flex-list li {
+        margin: 2px;
+        flex: 1 1 50%;
+    }
+
+    a:hover {
+        background-color: red;
+        color: white;
+    }
+
+}
+
+@media all and (max-width:600px) {
+
+    .flex-list ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .flex-list li {
+        margin: 2px;
+        flex: 1 1 50%;
+    }
+
+    a:hover {
+        background-color: red;
+        color: white;
+    }
+
+    .middle-top {
+        display: flex;
+        flex-direction: column;
+        flex:1 1 50%;
+    }
+
+    .middle-content1 {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        flex:100%;
+        
+    }
+
+    .middle-top {
+        display: flex;
+        flex-direction: column;
+        flex:1 1 50%;
+    }
+
+    
+
+
+
+
 }
